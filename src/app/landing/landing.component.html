@@ -1,0 +1,24 @@
+<div class="landing-container">
+  <h2>Data Api Rick</h2>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let character of data">
+      <!-- Enlace a la imagen en tamaño completo -->
+      <a href="{{ character.image }}" target="_blank">
+        <img [src]="character.image" alt="{{ character.name }}" />
+      </a>
+      <h3>{{ character.name }}</h3>
+      <p>Species: {{ character.species }}</p>
+      <p>Status: {{ character.status }}</p>
+      <p>Type: {{ character.type }}</p>
+      <p>gender: {{ character.gender }}</p>
+      
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="navigation-buttons">
+    <button mat-raised-button color="primary" (click)="loadPrevPage()">Previous Page</button>
+    <button mat-raised-button color="primary" (click)="loadNextPage()">Next Page</button>
+  </div>
+</div>

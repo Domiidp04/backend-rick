@@ -1,0 +1,40 @@
+/* styles.css */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+.landing-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navigation-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* landing.component.css */
+
+/* Resto de estilos... */
+
+.navigation-buttons button {
+  margin: 5px;
+}
+
+  
